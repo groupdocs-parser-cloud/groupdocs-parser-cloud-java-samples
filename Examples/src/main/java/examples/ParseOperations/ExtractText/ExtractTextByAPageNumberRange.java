@@ -2,11 +2,11 @@ package examples.ParseOperations.ExtractText;
 
 import com.groupdocs.cloud.parser.api.ParseApi;
 import com.groupdocs.cloud.parser.client.ApiException;
-import com.groupdocs.cloud.parser.model.ExtractTextOptions;
+import com.groupdocs.cloud.parser.model.TextOptions;
 import com.groupdocs.cloud.parser.model.FileInfo;
 import com.groupdocs.cloud.parser.model.TextPage;
 import com.groupdocs.cloud.parser.model.TextResult;
-import com.groupdocs.cloud.parser.model.requests.ExtractTextRequest;
+import com.groupdocs.cloud.parser.model.requests.TextRequest;
 
 import examples.Common;
 
@@ -23,12 +23,12 @@ public class ExtractTextByAPageNumberRange {
 			FileInfo fileInfo = new FileInfo();
 			fileInfo.setFilePath("cells/two-worksheets.xlsx");
 			fileInfo.setStorageName(Common.MyStorage);
-			ExtractTextOptions options = new ExtractTextOptions();
+			TextOptions options = new TextOptions();
 			options.setFileInfo(fileInfo);
 			options.setStartPageNumber(1);
 			options.setCountPagesToExtract(1);
-			ExtractTextRequest request = new ExtractTextRequest(options);
-			TextResult response = apiInstance.extractText(request);
+			TextRequest request = new TextRequest(options);
+			TextResult response = apiInstance.text(request);
 			for (TextPage page : response.getPages()) {
 				System.out.println("PageIndex: " + page.getPageIndex() + ". Text: " + page.getText());
 			}

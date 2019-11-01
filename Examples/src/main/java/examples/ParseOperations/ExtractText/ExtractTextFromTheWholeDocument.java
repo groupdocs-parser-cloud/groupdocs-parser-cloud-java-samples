@@ -2,10 +2,10 @@ package examples.ParseOperations.ExtractText;
 
 import com.groupdocs.cloud.parser.api.ParseApi;
 import com.groupdocs.cloud.parser.client.ApiException;
-import com.groupdocs.cloud.parser.model.ExtractTextOptions;
+import com.groupdocs.cloud.parser.model.TextOptions;
 import com.groupdocs.cloud.parser.model.FileInfo;
 import com.groupdocs.cloud.parser.model.TextResult;
-import com.groupdocs.cloud.parser.model.requests.ExtractTextRequest;
+import com.groupdocs.cloud.parser.model.requests.TextRequest;
 
 import examples.Common;
 
@@ -22,10 +22,10 @@ public class ExtractTextFromTheWholeDocument {
 			FileInfo fileInfo = new FileInfo();
 			fileInfo.setFilePath("email/eml/embedded-image-and-attachment.eml");
 			fileInfo.setStorageName(Common.MyStorage);
-			ExtractTextOptions options = new ExtractTextOptions();
+			TextOptions options = new TextOptions();
 			options.setFileInfo(fileInfo);
-			ExtractTextRequest request = new ExtractTextRequest(options);
-			TextResult response = apiInstance.extractText(request);
+			TextRequest request = new TextRequest(options);
+			TextResult response = apiInstance.text(request);
 
 			System.out.println("Text: " + response.getText());
 		} catch (ApiException e) {

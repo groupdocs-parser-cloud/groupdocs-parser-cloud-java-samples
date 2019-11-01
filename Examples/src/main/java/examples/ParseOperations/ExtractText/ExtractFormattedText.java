@@ -2,11 +2,11 @@ package examples.ParseOperations.ExtractText;
 
 import com.groupdocs.cloud.parser.api.ParseApi;
 import com.groupdocs.cloud.parser.client.ApiException;
-import com.groupdocs.cloud.parser.model.ExtractTextOptions;
+import com.groupdocs.cloud.parser.model.TextOptions;
 import com.groupdocs.cloud.parser.model.FileInfo;
 import com.groupdocs.cloud.parser.model.FormattedTextOptions;
 import com.groupdocs.cloud.parser.model.TextResult;
-import com.groupdocs.cloud.parser.model.requests.ExtractTextRequest;
+import com.groupdocs.cloud.parser.model.requests.TextRequest;
 
 import examples.Common;
 
@@ -25,12 +25,12 @@ public class ExtractFormattedText {
 			fileInfo.setStorageName(Common.MyStorage);
 			FormattedTextOptions formattedTextOptions = new FormattedTextOptions();
 			formattedTextOptions.setMode("Markdown");
-			ExtractTextOptions options = new ExtractTextOptions();
+			TextOptions options = new TextOptions();
 			options.setFileInfo(fileInfo);
 			options.setFormattedTextOptions(formattedTextOptions);
 			
-			ExtractTextRequest request = new ExtractTextRequest(options);
-			TextResult response = apiInstance.extractText(request);
+			TextRequest request = new TextRequest(options);
+			TextResult response = apiInstance.text(request);
 
 			System.out.println("Text: " + response.getText());
 		} catch (ApiException e) {

@@ -6,14 +6,10 @@ public class Common{
 	// TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free
 	// registration is required).
 
-	//public static String MyAppSID = "xxxxxxxxxxxxx";
-	//public static String MyAppKey = "xxxxxxxxxxxxx";
-	//public static String MyStorage = "xxxxxxxxxxx";
+	public static String MyAppSID = "xxxxxxxxxxxxx";
+	public static String MyAppKey = "xxxxxxxxxxxxx";
+	public static String MyStorage = "xxxxxxxxxxx";
 	
-	public static String MyAppSID = "parser.cloud";
-	public static String MyAppKey = "parser.cloud";
-	public static String MyStorage = "";
-
 	public static Configuration GetConfiguration()
 	{
 		Configuration cfg = new Configuration(Common.MyAppSID, Common.MyAppKey);		

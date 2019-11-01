@@ -9,7 +9,7 @@ import com.groupdocs.cloud.parser.model.PageTableAreaCell;
 import com.groupdocs.cloud.parser.model.ParseOptions;
 import com.groupdocs.cloud.parser.model.ParseResult;
 import com.groupdocs.cloud.parser.model.Template;
-import com.groupdocs.cloud.parser.model.requests.ParseDocumentRequest;
+import com.groupdocs.cloud.parser.model.requests.ParseRequest;
 
 import examples.Common;
 import examples.TemplateUtils;;
@@ -36,8 +36,8 @@ public class ParseByTemplateOfADocumentInsideAContainer {
             options.setContainerItemInfo(containerItemInfo);
             Template template = TemplateUtils.GetTemplate();
             options.setTemplate(template);
-            ParseDocumentRequest request = new ParseDocumentRequest(options);
-            ParseResult response = apiInstance.parseDocument(request);
+            ParseRequest request = new ParseRequest(options);
+            ParseResult response = apiInstance.parse(request);
 
             for (FieldData data : response.getFieldsData()) {
                 if (data.getPageArea().getPageTextArea() != null) {

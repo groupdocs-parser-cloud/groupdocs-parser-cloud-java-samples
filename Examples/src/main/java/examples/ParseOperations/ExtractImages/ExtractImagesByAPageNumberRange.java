@@ -7,7 +7,7 @@ import com.groupdocs.cloud.parser.model.Image;
 import com.groupdocs.cloud.parser.model.ImagePage;
 import com.groupdocs.cloud.parser.model.ImagesOptions;
 import com.groupdocs.cloud.parser.model.ImagesResult;
-import com.groupdocs.cloud.parser.model.requests.ExtractImagesRequest;
+import com.groupdocs.cloud.parser.model.requests.ImagesRequest;
 
 import examples.Common;
 
@@ -29,8 +29,8 @@ public class ExtractImagesByAPageNumberRange {
 			options.setFileInfo(fileInfo);
 			options.setStartPageNumber(1);
 			options.setCountPagesToExtract(2);
-			ExtractImagesRequest request = new ExtractImagesRequest(options);
-			ImagesResult response = apiInstance.extractImages(request);
+			ImagesRequest request = new ImagesRequest(options);
+			ImagesResult response = apiInstance.images(request);
 
 			for (ImagePage page : response.getPages()) {
 				System.out.println("Images from " + page.getPageIndex() + " page.");

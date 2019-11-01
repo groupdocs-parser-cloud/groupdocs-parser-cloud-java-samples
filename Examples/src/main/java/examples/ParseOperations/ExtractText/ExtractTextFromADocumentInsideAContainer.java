@@ -3,10 +3,10 @@ package examples.ParseOperations.ExtractText;
 import com.groupdocs.cloud.parser.api.ParseApi;
 import com.groupdocs.cloud.parser.client.ApiException;
 import com.groupdocs.cloud.parser.model.ContainerItemInfo;
-import com.groupdocs.cloud.parser.model.ExtractTextOptions;
+import com.groupdocs.cloud.parser.model.TextOptions;
 import com.groupdocs.cloud.parser.model.FileInfo;
 import com.groupdocs.cloud.parser.model.TextResult;
-import com.groupdocs.cloud.parser.model.requests.ExtractTextRequest;
+import com.groupdocs.cloud.parser.model.requests.TextRequest;
 
 import examples.Common;
 
@@ -26,14 +26,14 @@ public class ExtractTextFromADocumentInsideAContainer {
 			fileInfo.setStorageName(Common.MyStorage);
 			ContainerItemInfo containerItemInfo = new ContainerItemInfo();
 			containerItemInfo.setRelativePath("template-document.pdf");
-			ExtractTextOptions options = new ExtractTextOptions();
+			TextOptions options = new TextOptions();
 			options.setFileInfo(fileInfo);
 			options.containerItemInfo(containerItemInfo);
 			options.setStartPageNumber(2);
 			options.setCountPagesToExtract(1);
 
-			ExtractTextRequest request = new ExtractTextRequest(options);
-			TextResult response = apiInstance.extractText(request);
+			TextRequest request = new TextRequest(options);
+			TextResult response = apiInstance.text(request);
 
 			System.out.println("Text: " + response.getPages().get(0).getText());
 		} catch (ApiException e) {

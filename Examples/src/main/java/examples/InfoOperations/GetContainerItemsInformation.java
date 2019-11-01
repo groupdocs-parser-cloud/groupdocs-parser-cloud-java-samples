@@ -6,7 +6,7 @@ import com.groupdocs.cloud.parser.model.ContainerItem;
 import com.groupdocs.cloud.parser.model.ContainerOptions;
 import com.groupdocs.cloud.parser.model.ContainerResult;
 import com.groupdocs.cloud.parser.model.FileInfo;
-import com.groupdocs.cloud.parser.model.requests.GetContainerInfoRequest;
+import com.groupdocs.cloud.parser.model.requests.ContainerRequest;
 
 import examples.Common;
 
@@ -25,8 +25,8 @@ public class GetContainerItemsInformation {
 			fileInfo.setStorageName(Common.MyStorage);
 			ContainerOptions options = new ContainerOptions();
 			options.setFileInfo(fileInfo);
-			GetContainerInfoRequest request = new GetContainerInfoRequest(options);
-			ContainerResult response = apiInstance.getContainerInfo(request);
+			ContainerRequest request = new ContainerRequest(options);
+			ContainerResult response = apiInstance.container(request);
 
 			for (ContainerItem item : response.getContainerItems()) {
 				System.out.println("Name: " + item.getName() + ". FilePath: " + item.getFilePath());

@@ -6,7 +6,7 @@ import com.groupdocs.cloud.parser.model.FileInfo;
 import com.groupdocs.cloud.parser.model.Image;
 import com.groupdocs.cloud.parser.model.ImagesOptions;
 import com.groupdocs.cloud.parser.model.ImagesResult;
-import com.groupdocs.cloud.parser.model.requests.ExtractImagesRequest;
+import com.groupdocs.cloud.parser.model.requests.ImagesRequest;
 
 import examples.Common;
 
@@ -25,8 +25,8 @@ public class ExtractImagesFromTheWholeDocument {
 			fileInfo.setStorageName(Common.MyStorage);
 			ImagesOptions options = new ImagesOptions();
 			options.setFileInfo(fileInfo);
-			ExtractImagesRequest request = new ExtractImagesRequest(options);
-			ImagesResult response = apiInstance.extractImages(request);
+			ImagesRequest request = new ImagesRequest(options);
+			ImagesResult response = apiInstance.images(request);
 
 			for (Image image : response.getImages()) {
 				System.out.println(
