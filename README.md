@@ -2,7 +2,7 @@
 
 This repository contains [Examples](Examples) projects for [GroupDocs.Parser Cloud SDK for Java](https://products.groupdocs.cloud/parser/java) to help you learn and write your own applications.
 
-[GroupDocs.Parser Cloud SDK for Java](https://products.groupdocs.cloud/parser/java) allows you to merge documents and manipulate document structure across wide range of supported document types - PDF, DOCX/DOC, PPTX/PPT, XLSX/XLS, VSDX/VSD, ODT, ODS, ODP, HTML, EPUB and many others. Merge several documents into one, split single document to multiple documents, reorder or replace document pages, change page orientation, manage document password and perform other manipulations with [GroupDocs.Parser Cloud API](https://products.groupdocs.cloud/parser). GroupDocs.Parser Cloud SDK for Java has been developed to help you integrate all these features in your Java application without any hassle.
+[GroupDocs.Parser Cloud SDK for Java](https://products.groupdocs.cloud/parser/java) allows you to extract data from over 50 document types. One of the most valuable features of [GroupDocs.Parser Cloud API](https://products.groupdocs.cloud/parser) is parsing documents with predefined templates. It's easy to define template and extract data from invoices, prices or other kinds of your typical documents.The API also provides methods to extract images, extract text. You can do it with regular documents and containers like ZIP archives, OST/PST mail data files and PDF portfolios. GroupDocs.Parser Cloud SDK for Java has been developed to help you integrate all these features in your Java application without any hassle.
 
 <p align="center">
 
