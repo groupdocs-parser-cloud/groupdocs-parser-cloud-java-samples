@@ -37,6 +37,7 @@ public class ExtractImagesByAPageNumberRange {
 				for (Image image : page.getImages()) {
 					System.out.println(
 							"Image path in storage: " + image.getPath() + ". Download url: " + image.getDownloadUrl());
+					System.out.println("Image format: " + image.getFileFormat());
 				}
 			}
 		} catch (ApiException e) {

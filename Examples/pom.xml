@@ -7,14 +7,14 @@
     <repository>
 	    <id>groupdocs-artifact-repository</id>
 	    <name>GroupDocs Artifact Repository</name>
-	    <url>https://repository.groupdocs.cloud/repo</url>
+	    <url>https://repository-qa.groupdocs.cloud/repo</url>
 	</repository>
 </repositories>
  <dependencies>  	
 	<dependency>
     	<groupId>com.groupdocs</groupId>
     	<artifactId>groupdocs-parser-cloud</artifactId>
-    	<version>19.11</version>
+    	<version>20.6</version>
     	<scope>compile</scope>
 	</dependency>
   </dependencies>

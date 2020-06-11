@@ -31,6 +31,7 @@ public class ExtractImagesFromTheWholeDocument {
 			for (Image image : response.getImages()) {
 				System.out.println(
 						"Image path in storage: " + image.getPath() + ". Download url: " + image.getDownloadUrl());
+				System.out.println("Image format: " + image.getFileFormat());
 			}
 		} catch (ApiException e) {
 			System.err.println("Exception while calling ParseApi:");
