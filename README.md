@@ -15,10 +15,4 @@ Directory | Description
 --------- | -----------
 [Examples](Examples)  | A collection of Java Cloud SDK examples that help you learn the product features
 
-## Resources
-
-+ **Website:** [www.groupdocs.cloud](http://www.groupdocs.cloud)
-+ **Product Home:** [GroupDocs.Parser Cloud SDK for Java](https://products.groupdocs.cloud/parser/java)
-+ **Documentation:** [GroupDocs.Parser Cloud SDK Documentation](https://docs.groupdocs.cloud/display/parsercloud/Home)
-+ **Free Support:** [GroupDocs.Parser Cloud SDK Free Support Forum](https://forum.groupdocs.cloud/c/parser)
-+ **Blog:** [GroupDocs.Parser Cloud SDK Blog](https://blog.groupdocs.cloud/category/parser)
+[Home](https://www.groupdocs.cloud/) | [Product Page](https://products.groupdocs.cloud/parser/java) | [Docs](https://docs.groupdocs.cloud/parser/) | [Demos](https://products.groupdocs.app/parser/family) | [API Reference](https://apireference.groupdocs.cloud/parser/) | [Source Code](https://github.com/groupdocs-parser-cloud/groupdocs-parser-cloud-java) | [Blog](https://blog.groupdocs.cloud/category/parser/) | [Free Support](https://forum.groupdocs.cloud/c/parser) | [Free Trial](https://purchase.groupdocs.cloud/trial)
